@@ -1,0 +1,78 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#root {
+    width: 100%;
+    max-width: 20%;
+    background: #d6cdaf;
+    padding: 30px 30px;
+    padding-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Estilo do formulário */
+#form-new {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-new label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#form-new input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#form-new input:focus {
+    border-color: #ffffff;
+}
+
+/* Botão de envio */
+#form-new button {
+    background-color: #bab4ad;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: solid 3px;
+    border-color: #928d8a;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#form-new button:hover {
+    background-color: #928d8a;
+}
+
+/* Mensagem de erro */
+#msgErro {
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: none;
+}

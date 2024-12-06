@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+/* cabeçalho */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: 0;
+    font-family: "Merriweather";
+    font-size: 15px;
+    font-style: normal;
+    box-sizing: border-box; /* Garante que padding e bordas não ultrapassem os limites do elemento */
+    overflow: hidden; /* Impede o excesso de conteúdo */
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Remove excesso horizontal */
+    overflow-y: hidden; /* Remove excesso vertical */
+}
+
+/* Adicionado para melhorar responsividade geral */
+body {
+    background-color: rgba(60, 110, 58, 0.9);
+    overflow-x: hidden; /* Remove barras de rolagem horizontais */
+    overflow-y: scroll;
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(60, 110, 58, 0.9);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    padding: 0 20px; /* Ajustado o padding para melhor alinhamento */
+}
+
+.logo {
+    width: 115px;
+    height: 90px;
+    margin-left: 35vh;
+}
+
+/* simbolo de home */
+.material-symbols-outlined {
+    font-size: 45px;
+    color: #ffffff;
+    margin-left: 05px;
+}
+
+.sobre {
+    margin-left: 160px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 90px; /* Tamanho ajustado para ser mais proporcional */
+    height: 50px;
+    color: #ffffff; /* Cor do texto */
+    font-size: 18px;
+    padding: 10px 20px; /* Adiciona espaçamento ao redor do texto */
+    background-color: rgba(1, 50, 3, 0.229);
+    border-radius: 5px; /* Borda arredondada */
+}
+
+.sobre:hover {
+    background-color: #014f08; /* Cor mais escura ao passar o mouse */
+}
+
+.nav-left {
+    display: flex; /* Para agrupar o ícone à esquerda */
+    align-items: center; /* Centraliza verticalmente o ícone */
+}
+
+.img_sobre{
+    width: 100%;
+    object-fit: cover; /* Mantém o aspecto visual */
+}
+
+footer {
+    background-color: rgba(60, 110, 58, 0.9);
+    color: #ffffff;
+    padding: 40px 20px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.footer-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 100%; /* Limita a largura máxima */
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    margin-top: 20px;
+    color:#ffffff;
+}

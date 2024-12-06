@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://img.freepik.com/fotos-gratis/fundo-ou-textura-grunge-de-fundo-de-parede-verde-escuro_1258-108737.jpg?t=st=1730481403~exp=1730485003~hmac=f3e5367f868dba75f3a71e935de1250ab881a57ad305da2575fb381e32b15942&w=1060);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* simbolo de home */
+.material-symbols-outlined {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+header {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(60, 110, 58, 0.9);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+    padding: 0 20px; /* Ajustado o padding para melhor alinhamento */
+}
+
+.logo {
+    width: 115px;
+    height: 90px;
+    margin-left: 35vh;
+}
+
+/* simbolo de home */
+.material-symbols-outlined {
+    font-size: 45px;
+    color: #ffffff;
+    margin-left: 05px;
+}
+
+.sobre {
+    margin-left: 160px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 90px; /* Tamanho ajustado para ser mais proporcional */
+    height: 50px;
+    color: #ffffff; /* Cor do texto */
+    font-size: 18px;
+    padding: 10px 20px; /* Adiciona espaçamento ao redor do texto */
+    background-color: rgba(1, 50, 3, 0.229);
+    border-radius: 5px; /* Borda arredondada */
+}
+
+.sobre:hover {
+    color: rgb(198, 247, 149);
+    background-color: rgba(1, 50, 3, 0.352);
+}
+
+.nav-left {
+    margin-top: 20px;
+    display: flex; /* Para agrupar o ícone à esquerda */
+    align-items: center; /* Centraliza verticalmente o ícone */
+}
+
+.slideshow-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.topicos {
+    margin-top: 40px;
+    color: #ffffff;
+    font-family: "Merriweather", serif;
+    font-style: italic;
+    font-size: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2% 0 5%;
+}
+
+.quadros,
+.quadros1,
+.quadros2 {
+    color: #ffffff;
+    font-size: 30px;
+    background-size: cover;
+    width: 80vw;
+    height: 30vh;
+    border: solid 0.3px;
+    border-color: black;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.quadros {
+    background-image: url(https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/brazil/diadaarvore1.jpg?crop=0%2C119%2C2048%2C1126&wid=4000&hei=2200&scl=0.512);
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.568);
+    background-blend-mode: overlay;
+}
+
+.quadros1 {
+    background-image: url(https://ufabcdivulgaciencia.proec.ufabc.edu.br/wp-content/uploads/2022/07/pexels-sandy-torchon-3973557-scaled-e1659124661875.jpg);
+    background-position: center 35%;
+    background-color: #0000007a;
+    background-blend-mode: overlay;
+}
+
+.quadros2 {
+    background-image: url(https://www.fundacaoastrojildo.org.br/wp-content/uploads/2021/08/mataatlantica.jpg);
+    background-position: top;
+    background-color: #0000007a;
+    background-blend-mode: overlay;
+}
+
+.quadros:hover,
+.quadros1:hover,
+.quadros2:hover {
+    background-color: #000000ac;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 15vh;
+    background-color: rgba(60, 110, 58, 0.9);
+    color: #ffffff;
+    padding: 40px 20px;
+    font-size: 16px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    margin-top: 20px;
+}

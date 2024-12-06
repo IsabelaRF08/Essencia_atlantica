@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="../css/homePage.css">
+    <link rel="stylesheet" href="../css/modal.css">
+    <title>Essência Atlântica</title>
+</head>
+
+<body>
+    <div class="pagina">
+        <!-- Cabeçalho -->
+        <!-- Cabeçalho -->
+        <header>
+            <!-- Ícone Home à Esquerda -->
+            <div class="nav-left">
+
+                <a href="../html/homePage.html">
+                    <span class="material-symbols-outlined">home</span>
+                </a>
+            </div>
+
+            <!-- Logo Centralizada -->
+            <img class="logo" src="/img/logo.png" alt="Essência Atlântica">
+
+            <a href = "../html/sobre_nos.html" class="sobre">Sobre</a>
+
+        
+        </header>
+
+
+        <!-- Carrossel -->
+        <div class="slideshow-container">
+            <div class="slide active" style="background-image: url('/img/1.png');"></div>
+            <div class="slide" style="background-image: url('/img/2.png');"></div>
+            <div class="slide" style="background-image: url('/img/3.png');"></div>
+        </div>
+
+        <!-- script para que role o slide -->
+        <script>
+            const slides = document.querySelectorAll('.slide');
+            let currentIndex = 0;
+
+            function nextSlide() {
+                slides[currentIndex].classList.remove('active');
+                currentIndex = (currentIndex + 1) % slides.length;
+                slides[currentIndex].classList.add('active');
+            }
+
+            setInterval(nextSlide, 5500);
+        </script>
+
+        <div class="background"></div>
+        
+        <p class="topicos">Tópicos sobre o bioma</p>
+
+        <div class="quadro" id="temas">
+            <div class="card">
+                <a class="open-modal" data-modal="login-modal" data-item="1">
+                    <div class="quadros">
+                        <div class="texto">FLORA</div>
+                    </div>
+
+                </a>
+                <a  class="open-modal" data-modal="login-modal" data-item="2">
+                    <div class="quadros1">
+                        <div class="texto">FAUNA</div>
+                    </div>
+                </a>
+                <a  class="open-modal" data-modal="login-modal" data-item="3">
+                    <div class="quadros2">
+                        <div class="texto">HIDROGRAFIA</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- Rodapé -->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <h3>Essência Atlântica</h3>
+                    <p>Protegendo a biodiversidade e promovendo a sustentabilidade ambiental.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Email: contato@essenciaatlantica.com</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <p>Endereço: Rua Verde, 100, São Paulo, SP</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <a href="../html/sobre_nos.html">Sobre</a><br>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Essência Atlântica. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+    <dialog id="login-modal" class='modal'>
+        <div style="text-align: right;">
+            <button class="close-modal" data-modal="login-modal">x</button>
+        </div>
+
+        <h2>FAÇA SEU LOGIN</h2>
+        <form id="login-form">
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Insira seu email educacional"><br><br>
+            <label for="senha">Senha:</label>
+            <input type="senha" id="password" name="senha" placeholder="Insira sua senha"><br><br>
+            <button class='entrar' id='entrar' type="submit">Entrar</button>
+        </form>
+
+        <div class="help">
+            <a href="./cadastro.html">Cadastro</a>
+
+        </div>
+    </dialog>
+    </div>
+    <script src="../js/modal.js"></script>
+</body>
+
+</html>

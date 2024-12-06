@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+.modal h2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 33px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.close-modal {
+    color: rgb(245, 245, 245);
+    background-color: crimson;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.close-modal:hover {
+    background-color: #FF0000;
+    /* Efeito de hover */
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dedac7;
+    border: solid 2px;
+    border-radius: 20px;
+    border-color: rgb(29, 95, 57);
+    width: 350px;
+    height: 445px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    display: flex;
+    border-radius: 5px;
+    width: 300px;
+    height: 35px;
+    border-color: grey;
+    justify-content: center;
+    font-family: "Merriweather";
+    margin-top: 10px;
+    background-color: #f3f0ec;
+    border: 2px solid #b3b3b3;
+}
+
+.entrar {
+    display: flex;
+    color: black;
+    background-color: #f3f0ec;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: solid, 2px, #b3b3b3;
+    margin-top: 20px;
+    font-size: 15px;
+
+
+}
+
+.entrar:hover {
+    background-color: rgb(254, 255, 254);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 12px;
+    font-family: "Merriweather";
+}
+
+.modal {
+    display: none;
+    /* Oculta o modal inicialmente */
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.601);
+    /* Fundo escurecido ao abrir */
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    margin-bottom: 20px;
+    font-family: "Merriweather";
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input:focus {
+    border-color: rgb(29, 95, 57);
+    /* Cor azul ao focar no input */
+    outline: none;
+}
+
+a:hover {
+    color: rgb(29, 95, 57);
+    /* Efeito de hover no link */
+}

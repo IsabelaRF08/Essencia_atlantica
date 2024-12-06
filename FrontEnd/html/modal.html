@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<div>
+        <button class="open-modal" data-modal="login-modal">
+            <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2019/09/coracao.jpg" width="200px" border="3px"
+                alt="Foto">
+        </button>
+
+        <dialog id="login-modal" class='modal'>
+            <div style="text-align: right;">
+        <button class="close-modal" data-modal="login-modal">x</button>
+            </div>
+
+            <h2>FAÇA SEU LOGIN</h2>
+            <form id="login-form">
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Insira seu email educacional"><br><br>
+                <label for="senha">Senha:</label>
+                <input type="senha" id="password" name="senha" placeholder="Insira sua senha"><br><br>
+                <button class='entrar' id='entrar' type="submit">Entrar</button>
+            </form>
+   
+            <div class="help">
+                <a href="./cadastro.html">Cadastro</a>
+                
+            </div>
+        </dialog>
+    </div>
+    <script src="../js/modal.js"></script>
+
+</body>
+</html>
+
+
+
+
+    
